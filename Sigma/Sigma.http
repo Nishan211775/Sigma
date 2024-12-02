@@ -1,0 +1,6 @@
+@Sigma_HostAddress = http://localhost:5195
+
+GET {{Sigma_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
