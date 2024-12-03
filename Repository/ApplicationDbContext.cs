@@ -7,6 +7,13 @@ namespace Repository
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
-        public DbSet<Candidate>? Users { get; set; }
+        public DbSet<Candidate>? Candidate { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Candidate>()
+                .HasIndex(x => x.Email)
+                .IsUnique();
+        }
     }
 }
