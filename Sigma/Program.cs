@@ -23,6 +23,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ICandidateRepository, CandidateRepository>();
 builder.Services.AddScoped<ICandidateService, CandidateService>();
 
+builder.Services.AddMemoryCache();
+
 builder.Services.AddDbContext<ApplicationDbContext>(option =>
 {
     var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");

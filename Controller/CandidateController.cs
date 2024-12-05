@@ -18,10 +18,28 @@ namespace Controller
             return await _candidateService.GetCandidateByIdAsync(id);
         }
 
+        [HttpGet("cache/{id}")]
+        public async Task<ResponseModal<CandidateViewModel?>> GetUsingCache(int id)
+        {
+            return await _candidateService.GetUsingCacheAsync(id);
+        }
+
+        [HttpGet("get-all")]
+        public async Task<ResponseModal<IEnumerable<CandidateViewModel>>> GetAll([FromQuery] int pageNumber, [FromQuery] int rowPerPage)
+        {
+            return await _candidateService.GetAllAsync(pageNumber, rowPerPage);
+        }
+
         [HttpPost]
         public async Task<ResponseModal> Post([FromBody] CandidateViewModel modal)
         {
-            return await _candidateService.UpsertAsync(modal);
+            return await _candidateService.SaveAsync(modal);
+        }
+
+        [HttpPut]
+        public async Task<ResponseModal> Put([FromBody] CandidateViewModel modal)
+        {
+            return await _candidateService.UpdateAsync(modal);
         }
 
         [HttpDelete]

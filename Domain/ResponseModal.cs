@@ -3,7 +3,7 @@
     public class ResponseModal
     {
         public string Message { get; set; } = string.Empty;
-        public ResponseType ResponseType { get; set; }
+        public required ResponseType ResponseType { get; set; }
     }
 
     public class ResponseModal<T> : ResponseModal
