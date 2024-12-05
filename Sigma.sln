@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35514.174 d17.12
+VisualStudioVersion = 17.12.35514.174
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sigma", "Sigma\Sigma.csproj", "{7A9AEAEE-2F9D-4D28-96A6-53FCC1ECBCA8}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{BF11709B-BC59-44CB-9AF7-96CE853C644B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{7A6D3530-0E0E-46F7-8503-1AA018314105}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{79EDBEA5-DC04-4E22-83F8-DA461E697A23}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{7A6D3530-0E0E-46F7-8503-1AA018314105}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A6D3530-0E0E-46F7-8503-1AA018314105}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A6D3530-0E0E-46F7-8503-1AA018314105}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79EDBEA5-DC04-4E22-83F8-DA461E697A23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79EDBEA5-DC04-4E22-83F8-DA461E697A23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79EDBEA5-DC04-4E22-83F8-DA461E697A23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79EDBEA5-DC04-4E22-83F8-DA461E697A23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

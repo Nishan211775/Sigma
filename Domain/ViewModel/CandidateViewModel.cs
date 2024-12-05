@@ -6,21 +6,25 @@ namespace Domain.ViewModel
     {
         public int Id { get; set; }
 
+        [Required]
         [MaxLength(500)]
-        public required string FirstName { get; set; }
+        public string FirstName { get; set; } = string.Empty;
 
+        [Required]
         [MaxLength(500)]
-        public required string LastName { get; set; }
+        public string LastName { get; set; } = string.Empty;
 
         [MaxLength(50)]
         public string? PhoneNumber { get; set; }
 
+        [Required]
         [MaxLength(256)]
         [EmailAddress(ErrorMessage = "Invalid email address.")]
-        public required string Email { get; set; }
+        public string Email { get; set; } = string.Empty;
 
+        [Required]
         [MaxLength(256)]
-        public required string TimeInterval { get; set; }
+        public string TimeInterval { get; set; } = string.Empty;
 
         [MaxLength(256)]
         [Url(ErrorMessage = "Invalid LinkedIn profile URL.")]
@@ -30,6 +34,7 @@ namespace Domain.ViewModel
         [Url(ErrorMessage = "Invalid GitHub profile URL.")]
         public string? GithubProfile { get; set; }
 
-        public required string Comment { get; set; }
+        [Required]
+        public string Comment { get; set; } = string.Empty;
     }
 }
